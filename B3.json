@@ -1,0 +1,20 @@
+{
+    "name": "B3",
+    "description": "Download content from a URL and save it to the specified path.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "url": {
+                "type": "string",
+                "pattern": "^https?://.*",
+                "description": "URL to download content from."
+            },
+            "save_path": {
+                "type": "string",
+                "pattern": "^/data/.*",
+                "description": "Path to save the downloaded content (must be inside /data for security reasons)."
+            }
+        },
+        "required": ["url", "save_path"]
+    }
+}

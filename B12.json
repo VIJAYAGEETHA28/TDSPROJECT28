@@ -1,0 +1,15 @@
+{
+    "name": "B12",
+    "description": "Ensure that the file path starts with /data for security compliance.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "filepath": {
+                "type": "string",
+                "pattern": "^/data/.*",
+                "description": "Filepath must start with /data to ensure secure access."
+            }
+        },
+        "required": ["filepath"]
+    }
+}
